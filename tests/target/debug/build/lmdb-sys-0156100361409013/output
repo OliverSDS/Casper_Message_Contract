@@ -1,0 +1,80 @@
+cargo:rerun-if-env-changed=LIBLMDB_NO_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+cargo:rerun-if-env-changed=PKG_CONFIG
+cargo:rerun-if-env-changed=LIBLMDB_STATIC
+cargo:rerun-if-env-changed=LIBLMDB_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+TARGET = Some("x86_64-unknown-linux-gnu")
+HOST = Some("x86_64-unknown-linux-gnu")
+cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+CC_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+CC_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+CFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+CFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,llvm14-builtins-abi,sse,sse2")
+running: "cc" "-O2" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-o" "/home/sinyordes/Masa\xc3\xbcst\xc3\xbc/casper-project/casper/tests/target/debug/build/lmdb-sys-0156100361409013/out/ce9efc71f2ad0469-mdb.o" "-c" "/home/sinyordes/.cargo/registry/src/github.com-1ecc6299db9ec823/lmdb-sys-0.8.0/lmdb/libraries/liblmdb/mdb.c"
+cargo:warning=/home/sinyordes/.cargo/registry/src/github.com-1ecc6299db9ec823/lmdb-sys-0.8.0/lmdb/libraries/liblmdb/mdb.c: In function ‘mdb_env_get_maxkeysize’:
+cargo:warning=/home/sinyordes/.cargo/registry/src/github.com-1ecc6299db9ec823/lmdb-sys-0.8.0/lmdb/libraries/liblmdb/mdb.c:10033:33: warning: unused parameter ‘env’ [-Wunused-parameter]
+cargo:warning=10033 | mdb_env_get_maxkeysize(MDB_env *env)
+cargo:warning=      |                        ~~~~~~~~~^~~
+cargo:warning=/home/sinyordes/.cargo/registry/src/github.com-1ecc6299db9ec823/lmdb-sys-0.8.0/lmdb/libraries/liblmdb/mdb.c: In function ‘mdb_cursor_put’:
+cargo:warning=/home/sinyordes/.cargo/registry/src/github.com-1ecc6299db9ec823/lmdb-sys-0.8.0/lmdb/libraries/liblmdb/mdb.c:6737:44: warning: this statement may fall through [-Wimplicit-fallthrough=]
+cargo:warning= 6737 |                                         if (SIZELEFT(fp) < offset) {
+cargo:warning=      |                                            ^
+cargo:warning=/home/sinyordes/.cargo/registry/src/github.com-1ecc6299db9ec823/lmdb-sys-0.8.0/lmdb/libraries/liblmdb/mdb.c:6742:33: note: here
+cargo:warning= 6742 |                                 case MDB_CURRENT:
+cargo:warning=      |                                 ^~~~
+exit status: 0
+running: "cc" "-O2" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-o" "/home/sinyordes/Masa\xc3\xbcst\xc3\xbc/casper-project/casper/tests/target/debug/build/lmdb-sys-0156100361409013/out/ce9efc71f2ad0469-midl.o" "-c" "/home/sinyordes/.cargo/registry/src/github.com-1ecc6299db9ec823/lmdb-sys-0.8.0/lmdb/libraries/liblmdb/midl.c"
+exit status: 0
+cargo:rerun-if-env-changed=AR_x86_64-unknown-linux-gnu
+AR_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=AR_x86_64_unknown_linux_gnu
+AR_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-unknown-linux-gnu
+ARFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_unknown_linux_gnu
+ARFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: "ar" "cq" "/home/sinyordes/Masa\xc3\xbcst\xc3\xbc/casper-project/casper/tests/target/debug/build/lmdb-sys-0156100361409013/out/liblmdb.a" "/home/sinyordes/Masa\xc3\xbcst\xc3\xbc/casper-project/casper/tests/target/debug/build/lmdb-sys-0156100361409013/out/ce9efc71f2ad0469-mdb.o" "/home/sinyordes/Masa\xc3\xbcst\xc3\xbc/casper-project/casper/tests/target/debug/build/lmdb-sys-0156100361409013/out/ce9efc71f2ad0469-midl.o"
+exit status: 0
+running: "ar" "s" "/home/sinyordes/Masa\xc3\xbcst\xc3\xbc/casper-project/casper/tests/target/debug/build/lmdb-sys-0156100361409013/out/liblmdb.a"
+exit status: 0
+cargo:rustc-link-lib=static=lmdb
+cargo:rustc-link-search=native=/home/sinyordes/Masaüstü/casper-project/casper/tests/target/debug/build/lmdb-sys-0156100361409013/out
